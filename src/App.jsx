@@ -1,0 +1,31 @@
+import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import Hero from "./components/Hero";
+import Architecture from "./pages/Architecture";
+import AboutMe from "./pages/AboutMe";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+
+function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <AboutMe />
+        <Skills />
+        <Projects />
+        <Architecture />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+export default App;
