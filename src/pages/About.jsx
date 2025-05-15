@@ -116,8 +116,10 @@ const About = () => {
     <Section id="about">
       <Card
         initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.4 }}
       >
         <Title>About Me</Title>
 

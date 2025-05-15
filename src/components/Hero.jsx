@@ -85,10 +85,6 @@ const Hero = () => {
           <FaDownload />
           나의 이야기 보기
         </CTAButton>
-        <CTAButton href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-          <FaDownload />
-          이력서 PDF
-        </CTAButton>
       </ButtonGroup>
     </HeroWrapper>
   );

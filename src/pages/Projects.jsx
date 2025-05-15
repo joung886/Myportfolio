@@ -198,7 +198,14 @@ const Projects = () => {
 
   return (
     <Container id="projects">
-      <SectionTitle>Projects</SectionTitle>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        <SectionTitle>Projects</SectionTitle>
+      </motion.div>
       <DateRange>2025.03 ~ 2025.05 (2개월)</DateRange>
 
       <LinkRow>

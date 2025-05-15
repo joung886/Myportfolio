@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link as ScrollLink } from "react-scroll";
 
 const navItems = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#architecture", label: "Architecture" },
-  { href: "#contact", label: "Contact" },
+  { href: "about", label: "About" },
+  { href: "skills", label: "Skills" },
+  { href: "projects", label: "Projects" },
+  { href: "architecture", label: "Architecture" },
+  { href: "contact", label: "Contact" },
 ];
 
 const Navbar = styled.nav`
@@ -37,13 +38,18 @@ const NavLinks = styled.div`
   }
 `;
 
-const LinkStyled = styled.a`
+const LinkStyled = styled.span`
   color: #fff;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
   position: relative;
   transition: all 0.3s ease;
+  cursor: pointer;
+
+  &.active {
+    color: #00bfff;
+  }
 
   &:hover {
     color: #00bfff;
@@ -92,16 +98,6 @@ const MobileMenu = styled.div`
   border-radius: 10px;
   width: 200px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-
-  a {
-    color: #fff;
-    font-size: 1.1rem;
-    text-decoration: none;
-
-    &:hover {
-      color: #00bfff;
-    }
-  }
 `;
 
 const Header = () => {
@@ -114,9 +110,17 @@ const Header = () => {
 
       <NavLinks>
         {navItems.map(({ href, label }) => (
-          <LinkStyled key={href} href={href}>
-            {label}
-          </LinkStyled>
+          <ScrollLink
+            key={href}
+            to={href}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            activeClass="active"
+          >
+            <LinkStyled>{label}</LinkStyled>
+          </ScrollLink>
         ))}
       </NavLinks>
 
@@ -126,9 +130,18 @@ const Header = () => {
 
       <MobileMenu open={menuOpen}>
         {navItems.map(({ href, label }) => (
-          <LinkStyled key={href} href={href} onClick={() => setMenuOpen(false)}>
-            {label}
-          </LinkStyled>
+          <ScrollLink
+            key={href}
+            to={href}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={() => setMenuOpen(false)}
+            activeClass="active"
+          >
+            <LinkStyled>{label}</LinkStyled>
+          </ScrollLink>
         ))}
       </MobileMenu>
     </Navbar>
