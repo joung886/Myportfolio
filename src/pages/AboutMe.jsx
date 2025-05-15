@@ -64,46 +64,49 @@ const AboutMe = () => {
         <Paragraph>
           저는 <Highlight>배움의 가치를 실현하는 도전가</Highlight>라는 말이 제
           성향을 잘 표현한다고 생각합니다. 어릴 적부터 호기심이 많았고, 새로운
-          것에 도전하는 것을 좋아했습니다. CAD를 통해 문제를 분석하고 구조적으로
-          해결하는 과정을 경험하며, 논리적인 사고를 기르게 되었습니다.
+          것을 시도하는 것을 좋아했습니다.
         </Paragraph>
         <Paragraph>
-          이후 웹 개발을 배우기 시작했고, CAD에서 익힌 논리적 사고는
-          개발자로서의 기반이 되었습니다.
+          CAD 작업을 통해 문제를 분석하고 구조화하는 경험은 개발자로서의 논리적
+          사고 기반이 되었고, 이후 웹 개발로 전향하여
+          <Highlight>기획부터 구현까지의 전 과정</Highlight>을 직접 경험하게
+          되었습니다.
         </Paragraph>
       </Block>
 
       <Block {...motionProps}>
         <SubTitle>🧪 프로젝트 경험과 문제 해결</SubTitle>
         <Paragraph>
-          <Highlight>Atelier 프로젝트</Highlight>에서 공지사항 CRUD, 지도 API,
-          로그인 구현, 드로잉 기능을 맡았습니다.
+          <Highlight>Atelier 프로젝트</Highlight>에서 관리자 공지사항 CRUD,
+          Google 지도 API 연동, JWT 인증 기반 로그인 처리, 드로잉 캔버스 기능을
+          담당했습니다.
         </Paragraph>
         <Paragraph>
-          Jenkins 배포 환경에서 발생한 <Highlight>403, 404, 500 오류</Highlight>
-          를 로컬에서는 확인할 수 없던 문제로, API 경로, 권한, 응답 코드 등을
-          점검하며 해결했습니다.
+          Jenkins 환경 배포 시 <Highlight>403/404/500 오류</Highlight>가
+          발생했지만, 로컬에서는 재현되지 않아 어려움을 겪었습니다. Nginx 정적
+          자원 처리, Spring Security 권한 설정, 배포 경로 재확인을 통해{" "}
+          <Highlight>API 보호 설정 및 라우팅 문제</Highlight>를 해결했습니다.
         </Paragraph>
         <Paragraph>
-          <Highlight>JWT 인증 구조</Highlight>를 직접 학습하고, 공식 문서와
-          GPT의 도움을 받아 문제를 해결했습니다.
+          <Highlight>JWT 인증 구조</Highlight>는 공식 문서와 커뮤니티, GPT를
+          통해 학습했고, 액세스/리프레시 토큰 흐름과 인터셉터 처리 구조를
+          설계하여
+          <Highlight>실제 API 인증 시스템</Highlight>으로 구축했습니다.
         </Paragraph>
       </Block>
 
       <Block {...motionProps}>
         <SubTitle>🚀 개발자로서의 목표</SubTitle>
         <Paragraph>
-          빠르게 변하는 환경에서 중요한 것은{" "}
-          <Highlight>끊임없이 배우는 자세</Highlight>라고 생각합니다.
+          저는 <Highlight>끊임없이 배우는 자세</Highlight>를 가진 사람입니다.
+          빠르게 변하는 환경 속에서 학습을 지속하고, 팀원과 소통하며 함께
+          성장하는 개발자가 되고자 합니다.
         </Paragraph>
         <Paragraph>
-          저는 주저하지 않고 배우며, 소통을 통해 함께 성장하는 개발자가
-          되겠습니다.
-        </Paragraph>
-        <Paragraph>
-          <Highlight>사용자 중심 설계</Highlight>에 가치를 두고,{" "}
-          <Highlight>실질적인 가치를 제공</Highlight>하는 개발자로
-          성장하겠습니다.
+          <Highlight>기획부터 설계, 구현, 배포까지</Highlight> 한 사이클을 직접
+          경험하며 느낀 점은, 코드 그 자체보다{" "}
+          <Highlight>“사용자에게 어떤 가치를 줄 수 있는가”</Highlight>가 가장
+          중요하다는 것입니다.
         </Paragraph>
       </Block>
     </Wrapper>

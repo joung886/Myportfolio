@@ -16,89 +16,84 @@ import img9 from "@/assets/atelier-thumbnail9.png";
 import img10 from "@/assets/atelier-thumbnail10.png";
 
 const frontendFeatures = [
-  ["WhatsOn", "전시 슬라이더 및 3D 회전 효과를 활용한 갤러리 메인 구성"],
-  ["HighlightExhibition", "기획전을 소개하는 유저용 배너 섹션"],
-  ["ThemeGallery", "테마 기반의 이미지 갤러리와 스크롤 기반 인터랙션"],
-  ["ServiceMenu", "고객지원, 문의, 위치 등을 빠르게 이동하는 카드 메뉴"],
-  ["Login", "JWT 기반 로그인, 자동 로그인, 유효성 검사 포함"],
-  ["Join", "회원가입, 아이디/이메일 중복 체크 및 약관 동의 기능"],
-  ["FindId", "이메일을 통해 사용자 아이디를 찾는 기능"],
-  ["FindPassword", "이메일 인증코드를 통한 비밀번호 재설정 기능"],
-  ["Menu", "전역 오버레이 메뉴, 섹션별 라우팅 및 카테고리 구성"],
-  ["DrawingCanvas", "브러시/펜 툴, 확대/이동, 저장/임시 저장이 가능한 드로잉"],
-  ["Cart & Purchase", "장바구니에 담기, 수량 조절, 결제 및 완료 페이지 처리"],
-  ["실시간 채팅", "WebSocket을 활용한 유저 ↔ 아티스트 실시간 대화 기능"],
-  ["MyPage", "예약 내역, 구매 내역, 드로잉 내역 관리 + 사용자 정보 수정"],
-  ["Support", "공지사항, 이용안내, 위치, 문의 등록 등 고객지원 섹션"],
+  [
+    "드로잉 캔버스",
+    "Canvas API 기반 자유 그리기, 도구 선택, 저장/임시저장, 확대/이동 기능 구현",
+  ],
+  [
+    "실시간 채팅",
+    "WebSocket을 활용한 유저 ↔ 아티스트 간 실시간 메시지 전송 + 실시간 UI 반영",
+  ],
+  [
+    "인증 시스템",
+    "JWT 기반 로그인/회원가입/자동 로그인, 보호 라우팅 처리 및 토큰 관리",
+  ],
+  [
+    "마이페이지 통합 UI",
+    "회원정보 수정(비밀번호 변경 포함), 굿즈 구매내역 확인 및 환불 처리 모달까지 프론트 전체 구현 및 API 연동",
+  ],
+  [
+    "폼 UX 개선",
+    "회원가입, 비밀번호 찾기 등 입력 유효성 검사 및 사용자 피드백 처리",
+  ],
+  [
+    "상품/결제 흐름",
+    "작품 장바구니 추가, 수량 조절, 결제 및 완료 처리 UI 구성",
+  ],
+  [
+    "정보 탐색성 강화",
+    "메인 슬라이더, 기획전 배너, 갤러리 필터링, 위치/문의 등 접근성 설계",
+  ],
 ];
 
 const backendFeatures = [
-  ["로그인/회원가입", "JWT 발급 및 인증 처리, MySQL 기반 회원 저장"],
-  ["아이디/비밀번호 찾기", "이메일 기반 인증코드 전송 및 검증 로직"],
-  ["MyPage", "예약/구매/드로잉 내역 API 및 사용자 정보 수정 처리"],
-  ["공지사항", "관리자 권한 검증 및 CRUD API 제공"],
-  ["문의", "비회원 포함한 사용자 문의 DB 저장 및 분기 처리"],
+  ["JWT 인증 시스템", "Spring Boot 기반 사용자 인증/인가 처리 및 토큰 발급"],
+  ["계정 복구 로직", "이메일 인증을 통한 아이디/비밀번호 찾기 기능"],
+  [
+    "마이페이지 API",
+    "예약, 구매, 드로잉 내역 조회 및 사용자 정보 수정 REST API 제공",
+  ],
+  [
+    "공지/문의 관리",
+    "관리자 권한 검증 포함 공지사항 및 문의 사항 CRUD API 구현",
+  ],
 ];
 
 const projects = [
   {
     img: img1,
-    title: "갤러리 메인",
-    desc: "카드형 레이아웃과 전시 슬라이더를 통해 작품을 소개합니다.",
-    tags: ["React", "Styled-Components"],
-  },
-  {
-    img: img2,
-    title: "로그인 페이지",
-    desc: "JWT 기반 로그인 및 자동 로그인 UX 구현.",
-    tags: ["React", "JWT", "Spring Boot"],
-  },
-  {
-    img: img3,
-    title: "아이디 찾기",
-    desc: "이메일 기반 사용자 ID 검색 기능.",
-    tags: ["React", "Styled-Components"],
-  },
-  {
-    img: img4,
-    title: "비밀번호 찾기",
-    desc: "이메일 인증 후 비밀번호 재설정 기능.",
-    tags: ["React", "JWT"],
-  },
-  {
-    img: img5,
-    title: "회원가입",
-    desc: "중복 체크, 약관 동의, 정보 저장까지 포함한 가입 기능.",
-    tags: ["React", "MySQL", "JWT"],
-  },
-  {
-    img: img6,
-    title: "실시간 채팅",
-    desc: "WebSocket 기반 유저 ↔ 아티스트 대화 및 채팅 저장 기능.",
-    tags: ["WebSocket", "Spring Boot"],
+    title: "메인 전시 슬라이드",
+    desc: "사용자의 몰입감을 높이기 위해 3D 회전 효과와 깊이감을 구현한 메인 슬라이더입니다. 전시 정보를 공간적으로 배치하여 시각적 주목도를 높였고, 클릭 시 전시 상세로 바로 이동 가능하도록 설계하였습니다.",
+    tags: ["React", "Styled-Components", "3D Transform", "IntersectionObserver"]
   },
   {
     img: img7,
     title: "드로잉 기능",
-    desc: "Canvas API 기반 그림 그리기 + 저장 기능.",
+    desc: "Canvas API 기반 그림 그리기, 저장, 임시 저장, 확대/이동, 툴 선택 포함",
     tags: ["React", "Canvas", "WebSocket"],
   },
   {
-    img: img8,
-    title: "공지사항",
-    desc: "관리자 전용 CRUD 기능이 포함된 공지 게시판.",
-    tags: ["Spring Boot", "JWT"],
+    img: img6,
+    title: "실시간 채팅",
+    desc: "WebSocket 기반 유저 ↔ 아티스트 실시간 채팅, 메시지 전송 및 저장",
+    tags: ["WebSocket", "Spring Boot"],
   },
   {
-    img: img9,
-    title: "오시는 길",
-    desc: "Google Maps 연동 위치 정보 안내 페이지.",
-    tags: ["Google Maps", "Responsive UI"],
+    img: img2,
+    title: "로그인/회원가입",
+    desc: "JWT 인증 기반 로그인, 자동 로그인, 보호 라우팅 및 상태 유지 처리",
+    tags: ["React", "JWT", "Spring Boot"],
+  },
+  {
+    img: img5,
+    title: "회원가입",
+    desc: "중복 체크, 약관 동의, 입력 유효성 검사 포함한 가입 처리",
+    tags: ["React", "MySQL", "JWT"],
   },
   {
     img: img10,
     title: "문의하기",
-    desc: "입력 유효성 검사 포함 사용자 문의 제출 기능.",
+    desc: "입력 폼 검증, 제출, 비회원 처리, 관리자 알림 포함",
     tags: ["React", "Form Validation"],
   },
 ];

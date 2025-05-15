@@ -78,60 +78,110 @@ const Skills = () => {
       {
         name: "React",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        desc: "컴포넌트 기반 UI 라이브러리",
+        desc: "SPA 전체 UI 구조 설계 및 상태 기반 렌더링 구현",
       },
       {
-        name: "JavaScript",
+        name: "JavaScript (ES6+)",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        desc: "동적 웹 동작을 구현하는 언어",
+        desc: "ES6 문법 기반 동적 UI 구성 및 이벤트 처리",
+      },
+      {
+        name: "Zustand",
+        icon: "https://avatars.githubusercontent.com/u/47602532?s=200&v=4",
+        desc: "글로벌 상태 (로그인, 채팅 등) 관리 및 페이지 간 공유",
       },
       {
         name: "Styled-Components",
         icon: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
-        desc: "CSS-in-JS 스타일링 툴",
+        desc: "동적 스타일링 및 조건부 디자인 처리",
+      },
+      {
+        name: "React Router",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        desc: "SPA 내 라우팅 및 보호 라우트 구성",
+      },
+      {
+        name: "Axios",
+        icon: "https://axios-http.com/assets/logo.svg",
+        desc: "JWT 기반 API 요청 처리 및 인터셉터 설정",
+      },
+      {
+        name: "WebSocket",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+        desc: "실시간 채팅 및 자동 재연결 구현",
       },
     ],
     "Back-End": [
       {
-        name: "Spring Boot",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
-        desc: "Java 기반 웹 백엔드 프레임워크",
-      },
-      {
         name: "Java",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-        desc: "객체지향 프로그래밍 언어",
+        desc: "Spring Boot 기반 서버 로직 개발에 사용",
+      },
+      {
+        name: "Spring Boot",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+        desc: "RESTful API, 인증/인가 처리 로직 구현",
+      },
+      {
+        name: "Spring Security",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+        desc: "JWT 기반 사용자 인증, 접근 제어",
+      },
+      {
+        name: "JPA (Hibernate)",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg",
+        desc: "DB 매핑 처리 및 CRUD 자동화",
       },
     ],
     Database: [
       {
         name: "MySQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-        desc: "관계형 데이터베이스 관리 시스템",
+        desc: "회원/작품/예약 등 주요 데이터 저장 및 관리",
       },
     ],
-    "CI/CD": [
+    "CI/CD & Infra": [
       {
         name: "Jenkins",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
-        desc: "자동 빌드/배포 도구",
+        desc: "GitHub → Spring Boot 자동 빌드/배포 구성",
+      },
+      {
+        name: "GitHub Actions",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        desc: "코드 푸시 시 테스트 및 빌드 자동화",
       },
       {
         name: "Nginx",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
-        desc: "리버스 프록시 & 웹서버",
+        desc: "정적 자원 제공 및 리버스 프록시 설정",
+      },
+      {
+        name: "AWS EC2",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+        desc: "Jenkins + 서버 배포 환경 운영",
       },
     ],
-    "Dev Tools": [
+    "Dev Tools & Docs": [
       {
         name: "Swagger",
         icon: "https://avatars.githubusercontent.com/u/7658037?s=200&v=4",
-        desc: "API 문서 자동화 도구",
+        desc: "API 명세 자동 생성 및 테스트",
       },
       {
         name: "GitHub",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-        desc: "소스코드 버전 관리 플랫폼",
+        desc: "버전 관리 및 협업",
+      },
+      {
+        name: "VS Code",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+        desc: "프론트엔드 개발 환경 구성",
+      },
+      {
+        name: "IntelliJ",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg",
+        desc: "Java 백엔드 개발 IDE",
       },
     ],
   };
