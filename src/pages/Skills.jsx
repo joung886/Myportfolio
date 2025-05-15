@@ -128,6 +128,11 @@ const Skills = () => {
         desc: "JWT 기반 사용자 인증, 접근 제어",
       },
       {
+        name: "WebSocket",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+        desc: "STOMP 기반 실시간 처리리",
+      },
+      {
         name: "JPA (Hibernate)",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg",
         desc: "DB 매핑 처리 및 CRUD 자동화",

@@ -40,6 +40,17 @@ const Paragraph = styled.p`
   line-height: 1.85;
   margin-bottom: 1rem;
   color: #e0e0e0;
+
+  code {
+    font-family: inherit;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.95em;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0 4px;
+    border-radius: 4px;
+  }
 `;
 
 const Highlight = styled.span`
@@ -81,7 +92,10 @@ const About = () => {
       <Highlight>프로젝트명:</Highlight> Atelier – 예술 커뮤니티 플랫폼
     </>,
     <>
-      <Highlight>기간:</Highlight> 2025.03 ~ 2025.05 (2개월) / 팀 프로젝트 (4인)
+      <Highlight>기간:</Highlight> 2025.03 ~ 2025.05 (2개월) / 팀 프로젝트 (5인)
+    </>,
+    <>
+      <Highlight>역할:</Highlight> 백엔드2인 , 프론트2인 , API문서 1인
     </>,
     <>
       <Highlight>Atelier</Highlight>는 예술가와 사용자가 자유롭게{" "}
@@ -90,9 +104,9 @@ const About = () => {
     </>,
     <>
       저는 본 프로젝트에서{" "}
-      <Highlight>프론트엔드 전체 구조 설계 및 개발</Highlight>을 담당했습니다.
-      요구사항 정의, 와이어프레임, UI/UX 설계부터 상태관리 구조 설계 및 페이지
-      컴포넌트 개발까지 전반을 주도했습니다.
+      <Highlight>프론트엔드 전반 구조 설계 및 개발</Highlight>을 담당했습니다.
+      요구사항 정의, UI/UX 설계부터 상태관리 구조 설계 및 페이지 개발을 전반을
+      주도했습니다.
     </>,
     <>
       <strong>주요 구현 기능:</strong>
@@ -107,12 +121,15 @@ const About = () => {
     </>,
     <>
       <strong>기술적 도전 & 해결:</strong>
-      <br />- <Highlight>Canvas 렌더링 성능</Highlight>: 고해상도 드로잉 시
-      프레임 저하를 context 분리 + requestAnimationFrame 최적화로 해결
-      <br />- <Highlight>WebSocket 끊김 대응</Highlight>: useRef를 통한 소켓
-      유지 및 자동 재연결 전략 도입
-      <br />- <Highlight>구조 확장성 고려</Highlight>: 페이지/컴포넌트/모듈 분리
-      설계로 유지보수성과 협업 효율 향상
+      <br />- <Highlight>Canvas 렌더링 최적화</Highlight>: 고해상도 드로잉
+      성능을 개선하기 위해
+      <code>context.lineCap</code>, <code>globalAlpha</code> 등 스타일 세팅과
+      CSS <code>transform</code> 기반 확대/이동 처리로 렌더링 성능을
+      확보했습니다.
+      <br />- <Highlight>WebSocket 끊김 대응</Highlight>: <code>useRef</code>로
+      소켓 객체 유지 + 재연결 로직 구성하여 연결 안정성 확보
+      <br />- <Highlight>구조 설계</Highlight>: 페이지/모듈 분리 설계를 통해
+      유지보수성과 팀원 협업 효율을 높였습니다.
     </>,
     <>
       <strong>사용 기술:</strong>

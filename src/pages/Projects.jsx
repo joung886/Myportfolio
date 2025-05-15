@@ -64,7 +64,12 @@ const projects = [
     img: img1,
     title: "메인 전시 슬라이드",
     desc: "사용자의 몰입감을 높이기 위해 3D 회전 효과와 깊이감을 구현한 메인 슬라이더입니다. 전시 정보를 공간적으로 배치하여 시각적 주목도를 높였고, 클릭 시 전시 상세로 바로 이동 가능하도록 설계하였습니다.",
-    tags: ["React", "Styled-Components", "3D Transform", "IntersectionObserver"]
+    tags: [
+      "React",
+      "Styled-Components",
+      "3D Transform",
+      "IntersectionObserver",
+    ],
   },
   {
     img: img7,
@@ -75,7 +80,7 @@ const projects = [
   {
     img: img6,
     title: "실시간 채팅",
-    desc: "WebSocket 기반 유저 ↔ 아티스트 실시간 채팅, 메시지 전송 및 저장",
+    desc: "WebSocket 기반 유저 ↔ 아티스트 실시간 메시지 UI 구현, 연결 안정성을 위한 reconnect 및 nickname 처리 포함",
     tags: ["WebSocket", "Spring Boot"],
   },
   {
@@ -179,9 +184,17 @@ const FeatureList = styled.ul`
   padding-left: 1.2rem;
   line-height: 1.85;
 
+  code {
+    word-break: break-word !important;
+    white-space: normal !important;
+    font-family: inherit;
+    font-size: 0.95em;
+  }
+
   li {
     margin-bottom: 1rem;
     color: #e0e0e0;
+
     strong {
       color: #00bfff;
     }
@@ -275,6 +288,49 @@ const Projects = () => {
               {desc}
             </li>
           ))}
+        </FeatureList>
+      </FeatureSection>
+
+      <FeatureSection>
+        <SectionTitle>🧠 설계 의도 및 기술적 포인트</SectionTitle>
+        <FeatureList>
+          <li>
+            <strong>실시간 채팅 연결 안정화:</strong>
+            <br />
+            WebSocket 기반 실시간 채팅 UI를 직접 구현했으며, 연결 불안정 문제를
+            겪던 중<code>useRef</code>와 연결 상태 감지를 조합해 재연결 로직을
+            적용했습니다. 백엔드와의 협업을 통해 메시지 수신 구조도 일부 조정해
+            안정성을 높였습니다.
+          </li>
+          <li>
+            <strong>JWT 인증 흐름 최적화:</strong>
+            <br />
+            로그인 시 서버로부터 받은 JWT 토큰을 <code>localStorage</code>에
+            저장하고, 이를 Axios Interceptor에 자동 등록하여 이후 요청에서
+            인증을 자동 처리하도록 구성했습니다. 추가로 <code>autoLogin</code>{" "}
+            옵션을 통해 로그인 상태 유지를 개선하고, 토큰 만료 상황에 대비한 UX
+            흐름도 반영하였습니다.
+          </li>
+
+          <li>
+            <strong>드로잉 성능 개선:</strong>
+            <br />
+            Canvas API 기반 드로잉에서는 <code>lineCap</code>,{" "}
+            <code>lineJoin</code>, <code>globalAlpha</code> 등 스타일 속성을
+            활용해 필기 품질을 개선했습니다.
+            <br />
+            확대/축소는 <code>CSS transform</code>을 통해 구현하여 불필요한
+            re-rendering을 방지했고,
+            <br />
+            저장 시 <code>tempCanvas</code>를 사용하는 이중 버퍼링으로 이미지
+            품질을 유지했습니다.
+          </li>
+          <li>
+            <strong>Jenkins 배포 오류 해결:</strong>
+            <br />
+            403/404 오류 원인을 Nginx 정적 리소스 경로와 Spring Security의 보호
+            경로 설정에서 찾아, 실서버 환경에 맞춰 보안 설정을 조정했습니다.
+          </li>
         </FeatureList>
       </FeatureSection>
     </Container>
