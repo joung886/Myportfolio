@@ -116,8 +116,8 @@ const About = () => {
       간 메시지 송수신 + 실시간 알림
       <br />• <Highlight>JWT 인증 시스템</Highlight>: 로그인/회원가입/자동
       로그인, 인증 기반 보호 라우팅 적용
-      <br />• <Highlight>반응형 인터페이스</Highlight>: 모바일~PC 대응, 폼
-      유효성 검증, 사용자 피드백 중심 UX 강화
+      <br />• <Highlight>반응형 인터페이스</Highlight>: 폼 유효성 검증, 사용자
+      피드백 중심 UX 강화
     </>,
     <>
       <strong>기술적 도전 & 해결:</strong>
@@ -133,9 +133,10 @@ const About = () => {
     </>,
     <>
       <strong>사용 기술:</strong>
-      <br />• <Highlight>Frontend:</Highlight> React, Styled-Components,
-      React-Router, Canvas API, WebSocket
-      <br />• <Highlight>Backend:</Highlight> Spring Boot, MySQL
+      <br />• <Highlight>Frontend:</Highlight> React, Styled-Components, Axios,
+      Zustand, React-Router, Canvas API, WebSocket
+      <br />• <Highlight>Backend:</Highlight> Spring Boot, MySQL, WebSocket,
+      Spring Security, IntelliJ IDEA, Java
       <br />• <Highlight>CI/CD:</Highlight> GitHub → Jenkins 연동으로 Spring
       Boot 자동 빌드/배포
     </>,
