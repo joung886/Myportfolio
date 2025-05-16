@@ -101,21 +101,31 @@ const AboutMe = () => {
 
       <Block {...motionProps}>
         <SubTitle>🚀 개발자로서의 목표</SubTitle>
+
         <Paragraph>
-          <strong>단기 목표:</strong> React 생태계 심화 학습과 RESTful API 활용
-          능력을 고도화하여 프론트엔드의 깊이 있는 구조 설계가 가능한 개발자가
-          되는 것입니다.
+          <strong>단기 목표:</strong>
+          사용자 경험과 인터랙션 중심의 UI를 설계하고 구현하는 능력을 더욱
+          키우는 것입니다. 특히 WebSocket, Canvas, JWT 등 실시간 기능을
+          프론트엔드 구조에 안정적으로 녹여내는 데 집중하고 있습니다.
         </Paragraph>
+
         <Paragraph>
-          <strong>장기 목표:</strong> 팀원들과 원활히 협업하며{" "}
-          <Highlight>사용자 중심의 서비스</Highlight>를 설계하고, 기술과
-          커뮤니케이션 양쪽에서 균형 잡힌 리더형 개발자로 성장하고자 합니다.
+          <strong>장기 목표:</strong>
+          팀과의 협업 속에서 서비스의 전체 흐름을 이해하고, 사용자에게 실질적인
+          가치를 전달할 수 있는 개발자가 되고자 합니다.
+          <Highlight>
+            배움의 가치를 실현하고 끊임없이 도전하며 성장하는 자세
+          </Highlight>
+          를 바탕으로, 기술과 커뮤니케이션, 사용자 관점까지 함께 고민하는{" "}
+          <Highlight>균형 잡힌 풀스택 개발자</Highlight>로 나아가는 것이 저의
+          방향입니다.
         </Paragraph>
+
         <Paragraph>
-          <Highlight>기획부터 설계, 구현 </Highlight> 하나의 사이클을
-          완주하면서, 기술보다 더 중요한 건 "사용자에게 어떤 가치를 제공할 수
-          있는가"라는 점을 체감했습니다. 이를 실현하기 위해 계속해서 배우고
-          도전하겠습니다.
+          <Highlight>기획부터 설계, 구현, 피드백까지</Highlight> 하나의 개발
+          사이클을 경험하며, 기술 자체보다 중요한 건 “사용자가 어떤 문제를
+          해결할 수 있게 되는가”라는 사실을 실감했습니다. 앞으로도 그 가치를
+          중심에 두고 계속해서 성장해 나가겠습니다.
         </Paragraph>
       </Block>
     </Wrapper>
