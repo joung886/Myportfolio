@@ -21,11 +21,15 @@ const Profile = styled.img`
 `;
 
 const Name = styled.h1`
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   margin-bottom: 0.5rem;
+  line-height: 1.3;
 
   span {
+    display: block;
     color: #00bfff;
+    font-weight: 700;
+    font-size: 2.8rem;
   }
 `;
 
@@ -73,9 +77,9 @@ const Hero = () => {
     <HeroWrapper id="hero">
       <Profile src={ProfileImg} alt="정강철 프로필 사진" />
       <Name>
-        Hi, I'm <span>정강철</span>
+        배움을 결과로 만들어가는 개발자 <span>정강철</span>
       </Name>
-      <Role>풀스택 개발자 & 커뮤니티 플랫폼 빌더</Role>
+      <Role>끊임없이 도전하며 성장하는 풀스택 개발자</Role>
       <ButtonGroup>
         <CTAButton href="#projects">
           <FaFolderOpen />

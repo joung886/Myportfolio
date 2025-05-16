@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CareerTimeline from './components/CareerTimeline';
 
 import Hero from "./components/Hero";
 import Architecture from "./pages/Architecture";
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <CareerTimeline />
         <AboutMe />
         <Skills />
         <Projects />

@@ -216,6 +216,32 @@ const Projects = () => {
       </motion.div>
       <DateRange>2025.03 ~ 2025.05 (2개월)</DateRange>
 
+      <FeatureSection>
+        <SectionTitle>👥 참여 인원 및 구성</SectionTitle>
+        <FeatureList>
+          <li>총 5명 (프론트엔드 2명 / 백엔드 2명 / 기획 및 QA 1명)</li>
+        </FeatureList>
+      </FeatureSection>
+
+      <FeatureSection>
+        <SectionTitle>👥 프로젝트 구성 및 내 역할</SectionTitle>
+        <FeatureList>
+          <li>
+            전체 프론트엔드 아키텍처를 설계하고, 드로잉 기능, 마이페이지,
+            로그인/회원가입 UI 등 핵심 화면의 기획과 구현을 주도했습니다.
+          </li>
+          <li>
+            프론트엔드 영역은 약 80% 이상 담당했으며, 사용자 경험과 인터랙션을
+            중심으로 기능을 구성하고, Canvas API, JWT, WebSocket 등을 활용하여
+            실제 사용 흐름을 구현했습니다.
+          </li>
+          <li>
+            백엔드와의 협업에서는 API 명세 작성 및 연동 테스트를 진행했고, Git
+            브랜치 전략과 코드 리뷰를 통해 팀 개발 프로세스에도 참여했습니다.
+          </li>
+        </FeatureList>
+      </FeatureSection>
+
       <LinkRow>
         <a
           href="https://github.com/joung886/project_display"
@@ -230,13 +256,6 @@ const Projects = () => {
           rel="noopener noreferrer"
         >
           <FaGithub /> Backend
-        </a>
-        <a
-          href="https://atelier-gallery.vercel.app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaExternalLinkAlt /> Demo
         </a>
       </LinkRow>
 

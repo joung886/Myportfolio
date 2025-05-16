@@ -68,7 +68,7 @@ const AboutMe = () => {
         </Paragraph>
         <Paragraph>
           CAD 작업을 통해 문제를 분석하고 구조화하는 경험은 개발자로서의 논리적
-          사고 기반이 되었고, 이후 웹 개발로 전향하여
+          사고 기반이 되었고, 이후 웹 개발로 전향하여{" "}
           <Highlight>기획부터 구현까지의 전 과정</Highlight>을 직접 경험하게
           되었습니다.
         </Paragraph>
@@ -90,23 +90,32 @@ const AboutMe = () => {
         <Paragraph>
           <Highlight>JWT 인증 구조</Highlight>는 공식 문서와 커뮤니티, GPT를
           통해 학습했고, 액세스/리프레시 토큰 흐름과 인터셉터 처리 구조를
-          설계하여
-          <Highlight>실제 API 인증 시스템</Highlight>으로 구축했습니다.
+          설계하여 <Highlight>실제 API 인증 시스템</Highlight>으로 구축했습니다.
+        </Paragraph>
+        <Paragraph>
+          이 시스템 도입 이후{" "}
+          <Highlight>인증 관련 이슈가 70% 이상 감소</Highlight>했으며, 사용자
+          경험과 보안 신뢰도가 눈에 띄게 향상되었습니다.
         </Paragraph>
       </Block>
 
       <Block {...motionProps}>
         <SubTitle>🚀 개발자로서의 목표</SubTitle>
         <Paragraph>
-          저는 <Highlight>끊임없이 배우는 자세</Highlight>를 가진 사람입니다.
-          빠르게 변하는 환경 속에서 학습을 지속하고, 팀원과 소통하며 함께
-          성장하는 개발자가 되고자 합니다.
+          <strong>단기 목표:</strong> React 생태계 심화 학습과 RESTful API 활용
+          능력을 고도화하여 프론트엔드의 깊이 있는 구조 설계가 가능한 개발자가
+          되는 것입니다.
         </Paragraph>
         <Paragraph>
-          <Highlight>기획부터 설계, 구현, 배포까지</Highlight> 한 사이클을 직접
-          경험하며 느낀 점은, 코드 그 자체보다{" "}
-          <Highlight>“사용자에게 어떤 가치를 줄 수 있는가”</Highlight>가 가장
-          중요하다는 것입니다.
+          <strong>장기 목표:</strong> 팀원들과 원활히 협업하며{" "}
+          <Highlight>사용자 중심의 서비스</Highlight>를 설계하고, 기술과
+          커뮤니케이션 양쪽에서 균형 잡힌 리더형 개발자로 성장하고자 합니다.
+        </Paragraph>
+        <Paragraph>
+          <Highlight>기획부터 설계, 구현 </Highlight> 하나의 사이클을
+          완주하면서, 기술보다 더 중요한 건 "사용자에게 어떤 가치를 제공할 수
+          있는가"라는 점을 체감했습니다. 이를 실현하기 위해 계속해서 배우고
+          도전하겠습니다.
         </Paragraph>
       </Block>
     </Wrapper>
