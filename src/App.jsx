@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import CareerTimeline from './components/CareerTimeline';
+import CareerTimeline from "./components/CareerTimeline";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Hero from "./components/Hero";
 import Architecture from "./pages/Architecture";
@@ -24,6 +25,7 @@ function App() {
         <Projects />
         <Architecture />
         <Contact />
+        <ScrollToTop />
       </main>
       <Footer />
     </>

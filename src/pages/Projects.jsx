@@ -214,10 +214,16 @@ const Projects = () => {
       >
         <SectionTitle>Projects</SectionTitle>
       </motion.div>
-      <DateRange>2025.03 ~ 2025.05 (2개월)</DateRange>
+      <FeatureList>
+        <li>2025.03 ~ 2025.05 (2개월)</li>
+        <li>
+          <strong>Atelier</strong> – 아티스트와 사용자가 실시간으로 소통하고,
+          드로잉과 피드백을 통해 창작과 교감이 이루어지는 온라인 플랫폼입니다.
+        </li>
+      </FeatureList>
 
       <FeatureSection>
-        <SectionTitle>👥 참여 인원 및 구성</SectionTitle>
+        <SectionTitle>👥 참여 인원</SectionTitle>
         <FeatureList>
           <li>총 5명 (프론트엔드 2명 / 백엔드 2명 / 기획 및 QA 1명)</li>
         </FeatureList>
@@ -227,8 +233,8 @@ const Projects = () => {
         <SectionTitle>👥 프로젝트 구성 및 내 역할</SectionTitle>
         <FeatureList>
           <li>
-            전체 프론트엔드 아키텍처를 설계하고, 드로잉 기능, 마이페이지,
-            로그인/회원가입 UI 등 핵심 화면의 기획과 구현을 주도했습니다.
+            전체 프론트엔드 드로잉 기능, 마이페이지, 로그인/회원가입 UI 등 핵심
+            화면의 기획과 구현을 주도했습니다.
           </li>
           <li>
             프론트엔드 영역은 약 80% 이상 담당했으며, 사용자 경험과 인터랙션을
