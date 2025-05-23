@@ -75,16 +75,17 @@ const Button = styled.a`
 const Contact = () => {
   const contactList = [
     {
-      icon: <FaEnvelope />,
-      text: "이메일 보내기",
-      link: "mailto:rkdcjf311@naver.com",
+      icon: <FaGithub />,
+      label: "GitHub",
+      href: "https://github.com/joung886",
     },
     {
-      icon: <FaGithub />,
-      text: "GitHub",
-      link: "https://github.com/joung886",
+      icon: <FaEnvelope />,
+      label: "이메일",
+      href: "mailto:rkdcjf311@naver.com",
     },
   ];
+  
 
   return (
     <Section id="contact">

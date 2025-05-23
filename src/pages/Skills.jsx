@@ -40,23 +40,23 @@ const Grid = styled.div`
   gap: 1.5rem;
 `;
 
-const IconCard = styled.div`
-  background-color: #1e1e1e;
+const IconCard = styled(motion.div)`
+  background-color: ${({ theme }) => theme.colors.dark};
   border-radius: 12px;
   padding: 1rem 0.8rem;
-  width: 100px;
-  height: 100px;
+  width: clamp(90px, 10vw, 120px);
+  height: clamp(90px, 10vw, 120px);
   box-shadow: 0 0 10px rgba(0, 191, 255, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  cursor: default;
+  cursor: pointer;
 
   &:hover {
-    transform: scale(1.08);
-    background-color: #222;
+    transform: scale(1.1);
+    background-color: #262626;
   }
 
   img {
@@ -69,8 +69,10 @@ const IconCard = styled.div`
     font-size: 0.85rem;
     font-weight: 600;
     color: #e0e0e0;
+    text-align: center;
   }
 `;
+
 
 const Skills = () => {
   const skills = {

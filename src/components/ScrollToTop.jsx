@@ -48,7 +48,7 @@ const ScrollToTop = () => {
   };
 
   return (
-    <Button onClick={scrollToTop} show={showButton}>
+    <Button $show={showButton} onClick={scrollToTop}>
       <FaArrowUp />
     </Button>
   );

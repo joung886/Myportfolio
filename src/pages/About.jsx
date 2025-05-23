@@ -13,94 +13,72 @@ const Section = styled.section`
   max-width: 900px;
   margin: 0 auto;
   padding: 6rem 2rem 5rem;
-  color: #fff;
 `;
 
 const Card = styled.div`
-  background: linear-gradient(to right, #1a1a1a, #1e1e1e);
-  border-radius: 20px;
-  padding: 3rem;
-  box-shadow: 0 10px 25px rgba(0, 191, 255, 0.1);
+  background: ${({ theme }) => theme.colors.dark};
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 191, 255, 0.08);
 `;
 
 const Title = styled.h2`
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  border-bottom: 4px solid #00bfff;
+  border-bottom: 3px solid ${({ theme }) => theme.colors.primary};
   display: inline-block;
-  padding-bottom: 0.5rem;
   margin-bottom: 2rem;
+  padding-bottom: 0.3rem;
 `;
 
-const InfoRow = styled.div`
+const Row = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 `;
 
-const InfoItem = styled.div`
+const Item = styled.div`
   display: flex;
   align-items: center;
-  font-size: 1.1rem;
   gap: 0.75rem;
+  color: ${({ theme }) => theme.colors.text};
+  font-size: 1.05rem;
 
   svg {
-    color: #00bfff;
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   span {
-    color: #ddd;
+    color: #ccc;
+    font-weight: 400;
   }
 
   a {
-    color: #00bfff;
+    color: ${({ theme }) => theme.colors.primary};
     text-decoration: underline;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #66e0ff;
+      color: ${({ theme }) => theme.colors.accent};
     }
   }
-`;
-
-const Role = styled.div`
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #ccc;
-  font-weight: 500;
-`;
-
-const OneLiner = styled.p`
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  color: #ddd;
 `;
 
 const About = () => {
   return (
     <Section id="about">
       <Card>
-        <Title>About Me</Title>
+        <Title>Profile</Title>
 
-        <Role>🧑‍💻 풀스택 웹 개발자를 꿈꾸는 성장형 개발자</Role>
-
-        <InfoRow>
-          <InfoItem>
+        <Row>
+          <Item>
             <FaRegUser /> <strong>이름:</strong> <span>정강철</span>
-          </InfoItem>
-          <InfoItem>
-            <FaBirthdayCake /> <strong>생년월일:</strong>{" "}
-            <span>1994.06.07</span>
-          </InfoItem>
-          <InfoItem>
-            <FaPhoneAlt /> <strong>전화번호:</strong> <span>010-3828-7224</span>
-          </InfoItem>
-          <InfoItem>
+          </Item>
+          <Item>
             <FaEnvelope /> <strong>이메일:</strong>{" "}
-            <span>rkdcjf311@naver.com</span>
-          </InfoItem>
-          <InfoItem>
+            <a href="mailto:rkdcjf311@naver.com">rkdcjf311@naver.com</a>
+          </Item>
+          <Item>
             <FaGithub /> <strong>GitHub:</strong>{" "}
             <a
               href="https://github.com/joung886"
@@ -109,14 +87,19 @@ const About = () => {
             >
               github.com/joung886
             </a>
-          </InfoItem>
-          <InfoItem>
+          </Item>
+          <Item>
+            <FaPhoneAlt /> <strong>전화번호:</strong> <span>010-3828-7224</span>
+          </Item>
+          <Item>
+            <FaBirthdayCake /> <strong>생년월일:</strong>{" "}
+            <span>1994.06.07</span>
+          </Item>
+          <Item>
             <FaLaptopCode /> <strong>수료 과정:</strong>{" "}
-            <span>메타버스 에듀테크 개발자 트랙 풀스텍 웹개발 (2024.10 ~ 2025.05)</span>
-          </InfoItem>
-        </InfoRow>
-
-        <OneLiner>배움을 실천으로 연결하는 도전가 정강철입니다.</OneLiner>
+            <span>메타버스 에듀테크 개발자 트랙 (2024.10 ~ 2025.05)</span>
+          </Item>
+        </Row>
       </Card>
     </Section>
   );

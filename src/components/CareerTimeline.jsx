@@ -61,7 +61,7 @@ const CareerTimeline = () => {
   const timeline = [
     {
       period: "2024.10 ~ 2025.05",
-      content: "DWO 아카데미 – 풀스택 웹개발 수료",
+      content: "메타버스 에듀테크 개발자 트렉 이수",
       icon: <FaBook />,
     },
     {

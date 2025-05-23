@@ -12,23 +12,30 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/theme";
+import GlobalStyle from "./styles/GlobalStyle";
+
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <CareerTimeline />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Architecture />
-        <Contact />
-        <ScrollToTop />
-      </main>
-      <Footer />
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyle />
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <CareerTimeline />
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <Architecture />
+          <Contact />
+          <ScrollToTop />
+        </main>
+        <Footer />
+      </>
+    </ThemeProvider>
   );
 }
 
